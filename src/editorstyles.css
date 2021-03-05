@@ -16,8 +16,15 @@
 .runButton {
     display: flex;
     float: right;
+    margin-top: 20px;
 }
 
-.note-section {
-   
+.iFrame {
+    display: none;
+}
+
+.notes-section{
+    width: 100%;
+    height: 100px;
+    margin-top: 5px;
 }

@@ -3,7 +3,7 @@ import JavaScript from './components/JS'
 
 
 function Notes() {
-  const [javaScript, setjavaScript] = useState('')
+  const [javaScript, setjavaScript] = useState('//console logs will display in chrome\'s dev tools! Refresh the page to clear.//')
   const [srcDoc, setSrcDoc] = useState('')
 
   
@@ -31,28 +31,35 @@ function Notes() {
       language="JavaScript"
       displayName="JavaScript"
       value={javaScript}
+
       onChange={setjavaScript}
     />
     
-    {/* </div>
+    </div>
     <div className="console" >
-      Console:
-      <iframe
+       <iframe className="iFrame"
         // value={javaScript}
         srcDoc={srcDoc}
         title="console"
         sandbox="allow-scripts"
         width="100%"
 
-        /> */}
+        />
     
     </div>
     <div>
    
     </div>
     <div>
+      <textarea className="notes-section"
+          
+      />
+    </div>
+
+    <div>
       <button className="runButton">Save Note</button>
     </div>
+
     </>
   )
 }

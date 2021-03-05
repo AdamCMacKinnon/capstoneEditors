@@ -1,0 +1,23 @@
+.editor-title {
+    text-align: center;
+    padding-top: 2px;
+
+}
+.top-pane {
+    background-color: rgb(34, 34, 34);
+    color: #f7df1e;
+   
+
+}
+
+.code-mirror-wrapper {
+    border: black;
+}
+.runButton {
+    display: flex;
+    float: right;
+}
+
+.note-section {
+   
+}

@@ -1,12 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Notes from './Notes';
+import JavaScript from './JavaScript';
+import Python from './Python'
 import './editorstyles.css'
+import {
+  BrowserRouter as Router,
+  Route, Switch
+} from 'react-router-dom'
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Notes />
+    <Router>
+    <Switch>
+      <Route path="/javascript" component={JavaScript}/>
+      <Route path="/python" component={Python}/>
+    </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

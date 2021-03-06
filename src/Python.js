@@ -1,9 +1,9 @@
 import React, { useState, useEffect }from 'react'
-import JavaScript from './components/JS'
+import PY from './components/PY'
 
 
-function Notes() {
-  const [javaScript, setjavaScript] = useState('//console logs will display in chrome\'s dev tools! Refresh the page to clear.//')
+function Python() {
+  const [python, setPython] = useState('')
   const [srcDoc, setSrcDoc] = useState('')
 
   
@@ -14,7 +14,7 @@ function Notes() {
     <html>
      
 
-      <script>${javaScript}</script>
+      <script>${python}</script>
       </html>
   `
   )
@@ -22,23 +22,22 @@ function Notes() {
 
 
     return () => clearTimeout(timeout)
-  }, [javaScript])
+  }, [python])
 
   return (
     <>
-    <div className="pane top-pane">
-    <JavaScript 
-      language="JavaScript"
-      displayName="JavaScript"
-      value={javaScript}
+    <div className="pane py-top-pane">
+    <PY
+      language="Python"
+      displayName="Python"
+      value={python}
 
-      onChange={setjavaScript}
+      onChange={setPython}
     />
     
     </div>
     <div className="console" >
        <iframe className="iFrame"
-        // value={javaScript}
         srcDoc={srcDoc}
         title="console"
         sandbox="allow-scripts"
@@ -64,4 +63,4 @@ function Notes() {
   )
 }
 
-export default Notes;
+export default Python;

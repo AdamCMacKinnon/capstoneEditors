@@ -3,7 +3,7 @@ import JS from './components/JS'
 
 
 function JavaScript() {
-  const [javaScript, setjavaScript] = useState('//Console Logs will display in Chrome\'s Developer Tools!')
+  const [javaScript, setjavaScript] = useState('//Console Logs will display in Chrome\'s Developer Tools!  Refresh the page to clear.')
   const [srcDoc, setSrcDoc] = useState('')
 
   
@@ -52,7 +52,7 @@ function JavaScript() {
     </div>
     <div>
       <textarea className="notes-section"
-          
+          placeholder="Leave a note here..."
       />
     </div>
 

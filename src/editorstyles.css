@@ -16,8 +16,18 @@
    
 
 }
-.xml-top-payne {
+.xml-top-pane {
     background-color: rgb(230, 10, 10);
+}
+
+.css-top-pane {
+    background-color: rgb(69, 38, 245);
+    color: white;
+}
+
+.shell-top-pane {
+    background-color: rgb(19, 1, 1);
+    color: white;
 }
 
 .code-mirror-wrapper {

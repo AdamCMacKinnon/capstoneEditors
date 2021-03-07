@@ -51,7 +51,7 @@ function Python() {
     </div>
     <div>
       <textarea className="notes-section"
-          
+          placeholder="Leave a note here..."
       />
     </div>
 

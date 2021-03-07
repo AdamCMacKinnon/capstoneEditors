@@ -3,8 +3,8 @@ import HTMLCSS from './components/HTMLCSS'
 
 const HTMLandCSS = () => {
 
-    const [html, setHtml] = useState('')
-    const [css, setCss] = useState('')
+    const [html, setHtml] = useState('<!-- Type your HTML here! -->')
+    const [css, setCss] = useState('/*Style your CSS here!*/')
   return (
     <>
       <div className="pane xml-top-pane">
@@ -35,7 +35,7 @@ const HTMLandCSS = () => {
       </div>
       <div>
       <textarea className="notes-section"
-          
+          placeholder="Leave a note here..."
       />
     </div>
 

@@ -3,7 +3,7 @@ import JS from './components/JS'
 
 
 function JavaScript() {
-  const [javaScript, setjavaScript] = useState('//console logs will display in chrome\'s dev tools! Refresh the page to clear.//')
+  const [javaScript, setjavaScript] = useState('//Console Logs will display in Chrome\'s Developer Tools!')
   const [srcDoc, setSrcDoc] = useState('')
 
   
@@ -13,7 +13,7 @@ function JavaScript() {
         `
     <html>
      
-
+  
       <script>${javaScript}</script>
       </html>
   `
@@ -28,7 +28,7 @@ function JavaScript() {
     <>
     <div className="pane top-pane">
     <JS
-      language="JavaScript"
+      language="javascript"
       displayName="JavaScript"
       value={javaScript}
 

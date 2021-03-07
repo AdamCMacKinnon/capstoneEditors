@@ -30,6 +30,7 @@ export default function PY(props) {
              lineWrapping: true,
              lint: true,
              mode: language,
+             theme: 'material',
              lineNumbers: true
          }}
         />

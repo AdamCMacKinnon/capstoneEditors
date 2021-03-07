@@ -28,7 +28,7 @@ function Python() {
     <>
     <div className="pane py-top-pane">
     <PY
-      language="Python"
+      language="python"
       displayName="Python"
       value={python}
 

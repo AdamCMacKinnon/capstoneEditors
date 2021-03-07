@@ -4,6 +4,7 @@ import JavaScript from './JavaScript';
 import Python from './Python'
 import HTMLandCSS from './HTMLandCSS'
 import Shell from './Shell'
+import SQL from './SQL'
 import './editorstyles.css'
 import {
   BrowserRouter as Router,
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Route path="/python" component={Python}/>
       <Route path="/html_css" component={HTMLandCSS}/>
       <Route path="/shell" component={Shell}/>
+      <Route path="/sql" component={SQL}/>
     </Switch>
     </Router>
   </React.StrictMode>,

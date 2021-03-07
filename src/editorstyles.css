@@ -30,6 +30,10 @@
     color: white;
 }
 
+.sql-top-pane {
+    background-color: rgb(204, 99, 0);
+    color: white;
+}
 .code-mirror-wrapper {
     border: black;
 }
